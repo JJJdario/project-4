@@ -1,3 +1,19 @@
+$main-text-color: #777;
+$primary-text-color: #58e1c1;
+$primary-bg-c: #51ddfc;
+$second-bg-c: #63cc82;
+$third-bg-c: #e4757a;
+$forth-bg-c: #fd7856;
+$five-bg-c: #927bc1;
+$bt-color: #fff;
+
+
+
+
+
+
+
+
 
 /* ============================================= */
 /*              Base styles                      */
@@ -5,7 +21,7 @@
 
 * {
   font-family: 'Lato', sans-serif;
-  color: #777;
+  color: $main-text-color;
   box-sizing: border-box;
 }
 
@@ -29,7 +45,7 @@ a {
 
 .headline-secondary {
   font-weight: 300;
-  color: #777;
+  color: $main-text-color;
 }
 
 .link {

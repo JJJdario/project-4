@@ -1,4 +1,109 @@
 /* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+@media (min-width: 768px) {
+  /* line 6, ../../project-4/scss/utilities/_media.scss */
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 13, ../../project-4/scss/utilities/_media.scss */
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 19, ../../project-4/scss/utilities/_media.scss */
+  .row {
+    flex-direction: row;
+  }
+  /* line 23, ../../project-4/scss/utilities/_media.scss */
+  [class^=col] {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+  /* line 30, ../../project-4/scss/utilities/_media.scss */
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  /* line 34, ../../project-4/scss/utilities/_media.scss */
+  .col-1 {
+    flex-basis: 8.33%;
+  }
+  /* line 38, ../../project-4/scss/utilities/_media.scss */
+  .col-2 {
+    flex-basis: 16.67%;
+  }
+  /* line 42, ../../project-4/scss/utilities/_media.scss */
+  .col-3 {
+    flex-basis: 25.00%;
+  }
+  /* line 46, ../../project-4/scss/utilities/_media.scss */
+  .col-4 {
+    flex-basis: 33.33%;
+  }
+  /* line 50, ../../project-4/scss/utilities/_media.scss */
+  .col-5 {
+    flex-basis: 41.67%;
+  }
+  /* line 54, ../../project-4/scss/utilities/_media.scss */
+  .col-6 {
+    flex-basis: 50.00%;
+  }
+  /* line 58, ../../project-4/scss/utilities/_media.scss */
+  .col-7 {
+    flex-basis: 58.33%;
+  }
+  /* line 62, ../../project-4/scss/utilities/_media.scss */
+  .col-8 {
+    flex-basis: 66.67%;
+  }
+  /* line 66, ../../project-4/scss/utilities/_media.scss */
+  .col-9 {
+    flex-basis: 75.00%;
+  }
+  /* line 70, ../../project-4/scss/utilities/_media.scss */
+  .col-10 {
+    flex-basis: 83.33%;
+  }
+  /* line 74, ../../project-4/scss/utilities/_media.scss */
+  .col-11 {
+    flex-basis: 91.67%;
+  }
+  /* line 78, ../../project-4/scss/utilities/_media.scss */
+  .col-12 {
+    flex-basis: 100%;
+  }
+  /* line 82, ../../project-4/scss/utilities/_media.scss */
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  /* line 88, ../../project-4/scss/utilities/_media.scss */
+  .nav-link {
+    flex-basis: 100px;
+  }
+  /* line 92, ../../project-4/scss/utilities/_media.scss */
+  .btn {
+    padding: 10px 30px;
+  }
+  /* line 96, ../../project-4/scss/utilities/_media.scss */
+  .btn + .btn {
+    margin-left: 10px;
+  }
+  /* line 100, ../../project-4/scss/utilities/_media.scss */
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+/* ============================================= */
 /*              Base styles                      */
 /* ============================================= */
 /* line 5, ../../project-4/scss/base/_base.scss */
@@ -516,7 +621,7 @@ template {
 
 /* line 23, ../../project-4/scss/components/_grid.scss */
 .theme.col-1 {
-  background-color: #927bc1;
+  background-color: #fff;
 }
 
 /* line 27, ../../project-4/scss/components/_grid.scss */
@@ -635,111 +740,6 @@ template {
 .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
-}
-
-/* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
-@media (min-width: 768px) {
-  /* line 6, ../../project-4/scss/utilities/_media.scss */
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 13, ../../project-4/scss/utilities/_media.scss */
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 19, ../../project-4/scss/utilities/_media.scss */
-  .row {
-    flex-direction: row;
-  }
-  /* line 23, ../../project-4/scss/utilities/_media.scss */
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-  }
-  /* line 30, ../../project-4/scss/utilities/_media.scss */
-  [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  /* line 34, ../../project-4/scss/utilities/_media.scss */
-  .col-1 {
-    flex-basis: 8.33%;
-  }
-  /* line 38, ../../project-4/scss/utilities/_media.scss */
-  .col-2 {
-    flex-basis: 16.67%;
-  }
-  /* line 42, ../../project-4/scss/utilities/_media.scss */
-  .col-3 {
-    flex-basis: 25.00%;
-  }
-  /* line 46, ../../project-4/scss/utilities/_media.scss */
-  .col-4 {
-    flex-basis: 33.33%;
-  }
-  /* line 50, ../../project-4/scss/utilities/_media.scss */
-  .col-5 {
-    flex-basis: 41.67%;
-  }
-  /* line 54, ../../project-4/scss/utilities/_media.scss */
-  .col-6 {
-    flex-basis: 50.00%;
-  }
-  /* line 58, ../../project-4/scss/utilities/_media.scss */
-  .col-7 {
-    flex-basis: 58.33%;
-  }
-  /* line 62, ../../project-4/scss/utilities/_media.scss */
-  .col-8 {
-    flex-basis: 66.67%;
-  }
-  /* line 66, ../../project-4/scss/utilities/_media.scss */
-  .col-9 {
-    flex-basis: 75.00%;
-  }
-  /* line 70, ../../project-4/scss/utilities/_media.scss */
-  .col-10 {
-    flex-basis: 83.33%;
-  }
-  /* line 74, ../../project-4/scss/utilities/_media.scss */
-  .col-11 {
-    flex-basis: 91.67%;
-  }
-  /* line 78, ../../project-4/scss/utilities/_media.scss */
-  .col-12 {
-    flex-basis: 100%;
-  }
-  /* line 82, ../../project-4/scss/utilities/_media.scss */
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  /* line 88, ../../project-4/scss/utilities/_media.scss */
-  .nav-link {
-    flex-basis: 100px;
-  }
-  /* line 92, ../../project-4/scss/utilities/_media.scss */
-  .btn {
-    padding: 10px 30px;
-  }
-  /* line 96, ../../project-4/scss/utilities/_media.scss */
-  .btn + .btn {
-    margin-left: 10px;
-  }
-  /* line 100, ../../project-4/scss/utilities/_media.scss */
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
