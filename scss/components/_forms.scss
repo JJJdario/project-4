@@ -1,18 +1,18 @@
- /* ============================================= */
-  /*              Forms                            */
-  /* ============================================= */
-  
-  .form {
-    flex-basis: 100%;
+/* ============================================= */
+/*              Forms                            */
+/* ============================================= */
+
+.form {
+    flex-basis: $full;
   }
   
   .input{
     display: block;
     width: 94%;
-    margin: 10px auto 0;
+    margin: $ml auto 0;
     border: none;
-    padding: 10px;
-    border-bottom: 5px solid $primary-text-color;
+    padding: $ml;
+    border-bottom: $bo-r solid $primary-text-color;
   }
   
   .hidden {
@@ -23,4 +23,5 @@
     height:1px;
     overflow:hidden;
   }
+  
   

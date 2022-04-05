@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "base.css",
+	"sources": [
+		"../../scss/base/base.scss"
+	],
+	"sourcesContent": [
+		"\r\n/* ============================================= */\r\n/*              Base styles                      */\r\n/* ============================================= */\r\n\r\n* {\r\n    font-family: 'Lato', sans-serif;\r\n    color: #777;\r\n    box-sizing: border-box;\r\n  }\r\n  \r\n  p {\r\n    line-height: 1.45em;\r\n  }\r\n  \r\n  a {\r\n    text-decoration: none;\r\n  }\r\n  \r\n  "
+	],
+	"names": [],
+	"mappings": "AACA,mDAAmD;AACnD,mDAAmD;AACnD,mDAAmD;;AAEnD,AAAA,CAAC,CAAC;EACE,WAAW,EAAE,kBAAkB;EAC/B,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,UAAU;CACvB;;;AAED,AAAA,CAAC,CAAC;EACA,WAAW,EAAE,MAAM;CACpB;;;AAED,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;CACtB"
+}

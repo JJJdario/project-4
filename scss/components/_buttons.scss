@@ -1,34 +1,43 @@
- /* ============================================= */
-  /*              Buttons                          */
-  /* ============================================= */
-  
-  .btn {
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
     margin-top: 15px;
-    width: 100%;
+    width: $full;
     color: $bt-color;
     border: none;
-    padding: 10px 0;
+    padding: $pd;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: $bo-r;
+    @media (min-width: $break-xs) {
+      .btn {
+        padding: $ml 30px;
+      }
+      .btn + .btn {
+        margin-left: $ml;
+      }
+    }    
   }
   
   .default {
-    background-color: $primary-bg-c;
+    background-color: $primary-bg-color;
   }
   
   .error {
-    background-color: $third-bg-c;
+    background-color: $third-bg-color;
   }
   
   .info {
-    background-color: $five-bg-c;
+    background-color: $five-bg-color;
   }
   
   .success {
-    background-color: $second-bg-c;
+    background-color:$second-bg-color;
   }
   
   .warning {
-    background-color: $forth-bg-c;
+    background-color: $forth-bg-color;
   }
+  
   

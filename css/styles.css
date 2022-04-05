@@ -1,124 +1,19 @@
 /* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
-@media (min-width: 768px) {
-  /* line 6, ../../project-4/scss/utilities/_media.scss */
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 13, ../../project-4/scss/utilities/_media.scss */
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 19, ../../project-4/scss/utilities/_media.scss */
-  .row {
-    flex-direction: row;
-  }
-  /* line 23, ../../project-4/scss/utilities/_media.scss */
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-  }
-  /* line 30, ../../project-4/scss/utilities/_media.scss */
-  [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  /* line 34, ../../project-4/scss/utilities/_media.scss */
-  .col-1 {
-    flex-basis: 8.33%;
-  }
-  /* line 38, ../../project-4/scss/utilities/_media.scss */
-  .col-2 {
-    flex-basis: 16.67%;
-  }
-  /* line 42, ../../project-4/scss/utilities/_media.scss */
-  .col-3 {
-    flex-basis: 25.00%;
-  }
-  /* line 46, ../../project-4/scss/utilities/_media.scss */
-  .col-4 {
-    flex-basis: 33.33%;
-  }
-  /* line 50, ../../project-4/scss/utilities/_media.scss */
-  .col-5 {
-    flex-basis: 41.67%;
-  }
-  /* line 54, ../../project-4/scss/utilities/_media.scss */
-  .col-6 {
-    flex-basis: 50.00%;
-  }
-  /* line 58, ../../project-4/scss/utilities/_media.scss */
-  .col-7 {
-    flex-basis: 58.33%;
-  }
-  /* line 62, ../../project-4/scss/utilities/_media.scss */
-  .col-8 {
-    flex-basis: 66.67%;
-  }
-  /* line 66, ../../project-4/scss/utilities/_media.scss */
-  .col-9 {
-    flex-basis: 75.00%;
-  }
-  /* line 70, ../../project-4/scss/utilities/_media.scss */
-  .col-10 {
-    flex-basis: 83.33%;
-  }
-  /* line 74, ../../project-4/scss/utilities/_media.scss */
-  .col-11 {
-    flex-basis: 91.67%;
-  }
-  /* line 78, ../../project-4/scss/utilities/_media.scss */
-  .col-12 {
-    flex-basis: 100%;
-  }
-  /* line 82, ../../project-4/scss/utilities/_media.scss */
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  /* line 88, ../../project-4/scss/utilities/_media.scss */
-  .nav-link {
-    flex-basis: 100px;
-  }
-  /* line 92, ../../project-4/scss/utilities/_media.scss */
-  .btn {
-    padding: 10px 30px;
-  }
-  /* line 96, ../../project-4/scss/utilities/_media.scss */
-  .btn + .btn {
-    margin-left: 10px;
-  }
-  /* line 100, ../../project-4/scss/utilities/_media.scss */
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
-}
-
-/* ============================================= */
 /*              Base styles                      */
 /* ============================================= */
-/* line 5, ../../project-4/scss/base/_base.scss */
+/* line 6, ../../project-4/scss/base/base.scss */
 * {
   font-family: 'Lato', sans-serif;
   color: #777;
   box-sizing: border-box;
 }
 
-/* line 11, ../../project-4/scss/base/_base.scss */
+/* line 12, ../../project-4/scss/base/base.scss */
 p {
   line-height: 1.45em;
 }
 
-/* line 15, ../../project-4/scss/base/_base.scss */
+/* line 16, ../../project-4/scss/base/base.scss */
 a {
   text-decoration: none;
 }
@@ -570,27 +465,38 @@ template {
   border-radius: 5px;
 }
 
-/* line 15, ../../project-4/scss/components/_buttons.scss */
+@media (min-width: 768px) {
+  /* line 14, ../../project-4/scss/components/_buttons.scss */
+  .btn .btn {
+    padding: 10px 30px;
+  }
+  /* line 17, ../../project-4/scss/components/_buttons.scss */
+  .btn .btn + .btn {
+    margin-left: 10px;
+  }
+}
+
+/* line 23, ../../project-4/scss/components/_buttons.scss */
 .default {
   background-color: #51ddfc;
 }
 
-/* line 19, ../../project-4/scss/components/_buttons.scss */
+/* line 27, ../../project-4/scss/components/_buttons.scss */
 .error {
   background-color: #e4757a;
 }
 
-/* line 23, ../../project-4/scss/components/_buttons.scss */
+/* line 31, ../../project-4/scss/components/_buttons.scss */
 .info {
   background-color: #927bc1;
 }
 
-/* line 27, ../../project-4/scss/components/_buttons.scss */
+/* line 35, ../../project-4/scss/components/_buttons.scss */
 .success {
   background-color: #63cc82;
 }
 
-/* line 31, ../../project-4/scss/components/_buttons.scss */
+/* line 39, ../../project-4/scss/components/_buttons.scss */
 .warning {
   background-color: #fd7856;
 }
@@ -603,14 +509,31 @@ template {
   padding: 0 10px;
 }
 
-/* line 9, ../../project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 8, ../../project-4/scss/components/_grid.scss */
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 15, ../../project-4/scss/components/_grid.scss */
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
 }
 
-/* line 15, ../../project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 19, ../../project-4/scss/components/_grid.scss */
+  .row {
+    flex-direction: row;
+  }
+}
+
+/* line 25, ../../project-4/scss/components/_grid.scss */
 [class^=col] {
   margin-top: 10px;
   flex-basis: 100%;
@@ -619,67 +542,171 @@ template {
   border-radius: 5px;
 }
 
-/* line 23, ../../project-4/scss/components/_grid.scss */
-.theme.col-1 {
-  background-color: #fff;
+@media (min-width: 768px) {
+  /* line 32, ../../project-4/scss/components/_grid.scss */
+  [class^=col] [class^=col] {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+  /* line 38, ../../project-4/scss/components/_grid.scss */
+  [class^=col] [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
 }
 
-/* line 27, ../../project-4/scss/components/_grid.scss */
+/* line 44, ../../project-4/scss/components/_grid.scss */
+.theme.col-1 {
+  background-color: #927bc1;
+}
+
+@media (min-width: 768px) {
+  /* line 47, ../../project-4/scss/components/_grid.scss */
+  .theme.col-1 .col-1 {
+    flex-basis: 8.33%;
+  }
+}
+
+/* line 53, ../../project-4/scss/components/_grid.scss */
 .theme.col-2 {
   background-color: #fd7856;
 }
 
-/* line 31, ../../project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 56, ../../project-4/scss/components/_grid.scss */
+  .theme.col-2 .col-2 {
+    flex-basis: 16.67%;
+  }
+}
+
+/* line 62, ../../project-4/scss/components/_grid.scss */
 .theme.col-3 {
   background-color: #deb2ee;
 }
 
-/* line 35, ../../project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 66, ../../project-4/scss/components/_grid.scss */
+  .theme.col-3 .col-3 {
+    flex-basis: 25.00%;
+  }
+}
+
+/* line 72, ../../project-4/scss/components/_grid.scss */
 .theme.col-4 {
   background-color: #7ee6fd;
 }
 
-/* line 39, ../../project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 75, ../../project-4/scss/components/_grid.scss */
+  .theme.col-4 .col-4 {
+    flex-basis: 33.33%;
+  }
+}
+
+/* line 81, ../../project-4/scss/components/_grid.scss */
 .theme.col-5 {
   background-color: #88d9a0;
 }
 
-/* line 43, ../../project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 85, ../../project-4/scss/components/_grid.scss */
+  .theme.col-5 .col-5 {
+    flex-basis: 41.67%;
+  }
+}
+
+/* line 91, ../../project-4/scss/components/_grid.scss */
 .theme.col-6 {
   background-color: #4da2bb;
 }
 
-/* line 47, ../../project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 95, ../../project-4/scss/components/_grid.scss */
+  .theme.col-6 .col-6 {
+    flex-basis: 50.00%;
+  }
+}
+
+/* line 101, ../../project-4/scss/components/_grid.scss */
 .theme.col-7 {
   background-color: #ec9fa3;
 }
 
-/* line 51, ../../project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 104, ../../project-4/scss/components/_grid.scss */
+  .theme.col-7 .col-7 {
+    flex-basis: 58.33%;
+  }
+  /* line 107, ../../project-4/scss/components/_grid.scss */
+  .theme.col-7 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 113, ../../project-4/scss/components/_grid.scss */
 .theme.col-8 {
   background-color: #fd9f85;
 }
 
-/* line 55, ../../project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 117, ../../project-4/scss/components/_grid.scss */
+  .theme.col-8 .col-8 {
+    flex-basis: 66.67%;
+  }
+}
+
+/* line 123, ../../project-4/scss/components/_grid.scss */
 .theme.col-9 {
   background-color: #e4757a;
 }
 
-/* line 59, ../../project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 127, ../../project-4/scss/components/_grid.scss */
+  .theme.col-9 .col-9 {
+    flex-basis: 75.00%;
+  }
+}
+
+/* line 133, ../../project-4/scss/components/_grid.scss */
 .theme.col-10 {
   background-color: #63cc82;
 }
 
-/* line 63, ../../project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 137, ../../project-4/scss/components/_grid.scss */
+  .theme.col-10 .col-10 {
+    flex-basis: 83.33%;
+  }
+}
+
+/* line 143, ../../project-4/scss/components/_grid.scss */
 .theme.col-11 {
   background-color: #51ddfc;
 }
 
-/* line 67, ../../project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 147, ../../project-4/scss/components/_grid.scss */
+  .theme.col-11 .col-11 {
+    flex-basis: 91.67%;
+  }
+}
+
+/* line 153, ../../project-4/scss/components/_grid.scss */
 .theme.col-12 {
   background-color: #80e8d1;
 }
 
-/* line 71, ../../project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 157, ../../project-4/scss/components/_grid.scss */
+  .theme.col-12 .col-12 {
+    flex-basis: 100%;
+  }
+}
+
+/* line 163, ../../project-4/scss/components/_grid.scss */
 .card {
   flex-basis: 100%;
 }
@@ -687,7 +714,7 @@ template {
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
-/* line 5, ../../project-4/scss/components/_img.scss */
+/* line 6, ../../project-4/scss/components/_img.scss */
 .img-avatar {
   display: block;
   margin-left: auto;
@@ -697,7 +724,7 @@ template {
   max-height: 100%;
 }
 
-/* line 14, ../../project-4/scss/components/_img.scss */
+/* line 13, ../../project-4/scss/components/_img.scss */
 .img-frame {
   display: block;
   margin-left: auto;
@@ -708,11 +735,19 @@ template {
   border: 1px solid #ccc;
 }
 
-/* line 24, ../../project-4/scss/components/_img.scss */
+/* line 21, ../../project-4/scss/components/_img.scss */
 .img-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  /* line 24, ../../project-4/scss/components/_img.scss */
+  .img-logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
 }
 
 /* ============================================= */
@@ -720,13 +755,22 @@ template {
 /* ============================================= */
 /* line 5, ../../project-4/scss/components/_nav.scss */
 .nav {
-  padding-left: 0;
-  flex-basis: 100%;
   display: flex;
   flex-direction: column;
+  padding-left: 0;
+  flex-basis: 100%;
 }
 
-/* line 12, ../../project-4/scss/components/_nav.scss */
+@media (min-width: 768px) {
+  /* line 10, ../../project-4/scss/components/_nav.scss */
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+/* line 18, ../../project-4/scss/components/_nav.scss */
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -736,7 +780,14 @@ template {
   transition: background-color .2s ease-in-out,  color .2s ease-in-out;
 }
 
-/* line 23, ../../project-4/scss/components/_nav.scss */
+@media (min-width: 768px) {
+  /* line 28, ../../project-4/scss/components/_nav.scss */
+  .nav-link {
+    flex-basis: 100px;
+  }
+}
+
+/* line 34, ../../project-4/scss/components/_nav.scss */
 .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;

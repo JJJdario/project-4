@@ -2,9 +2,28 @@
 
 $main-text-color: #777;
 $primary-text-color: #58e1c1;
-$primary-bg-c: #51ddfc;
-$second-bg-c: #63cc82;
-$third-bg-c: #e4757a;
-$forth-bg-c: #fd7856;
-$five-bg-c: #927bc1;
 $bt-color: #fff;
+
+$primary-bg-color: #51ddfc;
+$second-bg-color: #63cc82;
+$third-bg-color: #e4757a;
+$forth-bg-color: #fd7856;
+$five-bg-color: #927bc1;
+
+
+
+//Media Q break points =============================
+
+$break-xs: 768px; 
+
+
+
+// typography =================================
+
+$small: 300; //font weight
+$bold: 700;  //font weight
+$bo-r: 5px;
+$pd: 10px 0;
+$ml: 10px;
+$full: 100%
+
