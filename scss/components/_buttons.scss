@@ -22,22 +22,44 @@
   
   .default {
     background-color: $primary-bg-color;
+      &:hover {
+        background-color: lighten($primary-bg-color, 15%);
+      }
+    
   }
   
   .error {
     background-color: $third-bg-color;
-  }
+   
+      &:hover {
+        background-color: lighten($third-bg-color, 15%);
+      }
+
+}
   
   .info {
     background-color: $five-bg-color;
-  }
+
+    &:hover {
+        background-color: lighten($five-bg-color, 15%);
+      }
+ 
+}
   
   .success {
     background-color:$second-bg-color;
-  }
+
+    &:hover {
+        background-color: lighten($second-bg-color, 15%);
+
+}
+}
   
   .warning {
     background-color: $forth-bg-color;
-  }
   
-  
+    &:hover {
+        background-color: lighten($forth-bg-color, 15%);
+      }
+
+}

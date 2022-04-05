@@ -35,11 +35,14 @@
         margin-top: 0;
         align-items: center;
       } 
-      [class^=col] + [class^=col] {
-      margin-left: $ml;
-      }
     }
   }
+  @media (min-width: $break-xs) {  
+     [class^=col] + [class^=col] {
+    margin-left: $ml;
+    }
+  }
+
   
   .theme.col-1 {
     background-color: $five-bg-color;
