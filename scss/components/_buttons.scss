@@ -23,7 +23,7 @@
   .default {
     background-color: $primary-bg-color;
       &:hover {
-        background-color: lighten($primary-bg-color, 15%);
+        background-color: lighten($primary-bg-color, 10%);
       }
     
   }
@@ -32,7 +32,7 @@
     background-color: $third-bg-color;
    
       &:hover {
-        background-color: lighten($third-bg-color, 15%);
+        background-color: lighten($third-bg-color, 10%);
       }
 
 }
@@ -41,7 +41,7 @@
     background-color: $five-bg-color;
 
     &:hover {
-        background-color: lighten($five-bg-color, 15%);
+        background-color: lighten($five-bg-color, 10%);
       }
  
 }
@@ -50,7 +50,7 @@
     background-color:$second-bg-color;
 
     &:hover {
-        background-color: lighten($second-bg-color, 15%);
+        background-color: lighten($second-bg-color, 10%);
 
 }
 }
@@ -59,7 +59,7 @@
     background-color: $forth-bg-color;
   
     &:hover {
-        background-color: lighten($forth-bg-color, 15%);
+        background-color: lighten($forth-bg-color, 10%);
       }
 
 }
