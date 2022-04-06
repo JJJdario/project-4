@@ -18,38 +18,6 @@ a {
   text-decoration: none;
 }
 
-/* ============================================= */
-/*              Typography                       */
-/* ============================================= */
-/* line 7, ../../project-4/scss/base/_typography.scss */
-.headline-primary {
-  color: #58e1c1;
-  margin-left: 10px;
-}
-
-/* line 12, ../../project-4/scss/base/_typography.scss */
-.headline-secondary {
-  font-weight: 300;
-  color: #777;
-}
-
-/* line 17, ../../project-4/scss/base/_typography.scss */
-.link {
-  color: #51ddfc;
-  font-weight: 700;
-}
-
-/* line 22, ../../project-4/scss/base/_typography.scss */
-.blockquote {
-  font-size: 1.5em;
-  font-weight: 300;
-  font-style: italic;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 8px solid #58e1c1;
-  border-radius: 5px;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -424,6 +392,38 @@ template {
 }
 
 /* ============================================= */
+/*              Typography                       */
+/* ============================================= */
+/* line 7, ../../project-4/scss/base/_typography.scss */
+.headline-primary {
+  color: #58e1c1;
+  margin-left: 10px;
+}
+
+/* line 12, ../../project-4/scss/base/_typography.scss */
+.headline-secondary {
+  font-weight: 300;
+  color: #777;
+}
+
+/* line 17, ../../project-4/scss/base/_typography.scss */
+.link {
+  color: #51ddfc;
+  font-weight: 700;
+}
+
+/* line 22, ../../project-4/scss/base/_typography.scss */
+.blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 8px solid #58e1c1;
+  border-radius: 5px;
+}
+
+/* ============================================= */
 /*              Forms                            */
 /* ============================================= */
 /* line 5, ../../project-4/scss/components/_forms.scss */
@@ -742,7 +742,7 @@ template {
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
-/* line 6, ../../project-4/scss/components/_img.scss */
+/* line 6, ../../project-4/scss/components/_images.scss */
 .img-avatar {
   display: block;
   margin-left: auto;
@@ -752,7 +752,7 @@ template {
   max-height: 100%;
 }
 
-/* line 13, ../../project-4/scss/components/_img.scss */
+/* line 13, ../../project-4/scss/components/_images.scss */
 .img-frame {
   display: block;
   margin-left: auto;
@@ -763,7 +763,7 @@ template {
   border: 1px solid #ccc;
 }
 
-/* line 21, ../../project-4/scss/components/_img.scss */
+/* line 21, ../../project-4/scss/components/_images.scss */
 .img-logo {
   display: block;
   margin-left: auto;
@@ -771,7 +771,7 @@ template {
 }
 
 @media (min-width: 768px) {
-  /* line 24, ../../project-4/scss/components/_img.scss */
+  /* line 24, ../../project-4/scss/components/_images.scss */
   .img-logo {
     margin-left: initial;
     margin-right: initial;
