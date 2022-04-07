@@ -14,12 +14,16 @@
       .btn {
         padding: $ml 30px;
       }
-      .btn + .btn {
-        margin-left: $ml;
-      }
     }    
   }
-  
+  @media (min-width: $break-xs) {
+    .btn + .btn {
+      margin-left: $ml;
+    }
+  }
+
+
+
   .default {
     background-color: $primary-bg-color;
       &:hover {
