@@ -22,6 +22,9 @@
     }
   }
   
+
+
+
   [class^=col] {
     margin-top: $ml;
     flex-basis: $full;
@@ -29,7 +32,6 @@
     padding: $ml;
     border-radius: $bo-r; // 10px
   }
-
   @media (min-width: $break-xs) {
     [class^=col] {
       display: flex;
@@ -38,7 +40,6 @@
       align-items: center;
     } 
   }
-
   @media (min-width: $break-xs) {  
      [class^=col] + [class^=col] {
        margin-left: $ml;
@@ -46,38 +47,43 @@
   }
 
   
+
+
   .theme.col-1 {
     background-color: $five-bg-color;
-    @media (min-width: $break-xs) { 
-      .col-1 {
-        flex-basis: 8.33%;
-      }
+  }
+  @media (min-width: $break-xs) { 
+    .col-1 {
+      flex-basis: 8.33%;
     }
   }
   
+
   .theme.col-2 {
     background-color:$forth-bg-color;
-    @media (min-width: $break-xs) {
-      .col-2 {
-        flex-basis: 16.67%;
-      }
+  
+  }
+  @media (min-width: $break-xs) {
+    .col-2 {
+      flex-basis: 16.67%;
     }
   }
-  
+
+
   .theme.col-3 {
     background-color: #deb2ee;
-    @media (min-width: $break-xs) {
-
-      .col-3 {
-        flex-basis: 25.00%;
-      }
+  }
+  @media (min-width: $break-xs) {
+    .col-3 {
+      flex-basis: 25.00%;
     }
   }
-  
+
+
   .theme.col-4 {
     background-color: #7ee6fd; 
   }
-  
+
   @media (min-width: $break-xs) {
     .col-4 {
       flex-basis: 33.33%;
@@ -86,23 +92,25 @@
   
   .theme.col-5 {
     background-color: #88d9a0;
-    @media (min-width: $break-xs) {
-      .col-5 {
-        flex-basis: 41.67%;
-      }
+  }
+  @media (min-width: $break-xs) {
+    .col-5 {
+      flex-basis: 41.67%;
     }
   }
-  
+
+
   .theme.col-6 {
     background-color: #4da2bb;
-    @media (min-width: $break-xs) {
-
-      .col-6 {
-        flex-basis: 50.00%;
-      }
+    
+  }
+  @media (min-width: $break-xs) {
+    .col-6 {
+      flex-basis: 50.00%;
     }
   }
-  
+
+
   .theme.col-7 {
     background-color: #ec9fa3;
   }
@@ -111,7 +119,6 @@
       flex-basis: 58.33%;
     }
   } 
-
 
 
   @media (min-width: $break-xs) {
@@ -124,54 +131,53 @@
 
   .theme.col-8 {
     background-color: #fd9f85;
-    @media (min-width: $break-xs) {
-
-      .col-8 {
-        flex-basis: 66.67%;
-      }
+  }
+  @media (min-width: $break-xs) {
+    .col-8 {
+      flex-basis: 66.67%;
     }
   }
   
   .theme.col-9 {
     background-color: $third-bg-color;
-    @media (min-width: $break-xs) {
-
-      .col-9 {
-        flex-basis: 75.00%;
-      }
+  }
+  @media (min-width: $break-xs) {
+    .col-9 {
+      flex-basis: 75.00%;
     }
   }
+
   
   .theme.col-10 {
     background-color:$second-bg-color;
+  }
     @media (min-width: $break-xs) {
-
       .col-10 {
         flex-basis: 83.33%;
       }
     }
-  }
+ 
   
   .theme.col-11 {
     background-color: $primary-bg-color;
-    @media (min-width: $break-xs) {
-
-      .col-11 {
-        flex-basis: 91.67%;
-      }
+  }
+  @media (min-width: $break-xs) {
+    .col-11 {
+      flex-basis: 91.67%;
     }
   }
-  
+
+
   .theme.col-12 {
     background-color: #80e8d1;
-    @media (min-width: $break-xs) {
-
-      .col-12 {
-        flex-basis: $full;
-      }
+  }
+  @media (min-width: $break-xs) {
+    .col-12 {
+      flex-basis: $full;
     }
   }
-  
+
+
   .card {
     flex-basis: $full;
   }
